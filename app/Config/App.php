@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://www567.lamp.le.ac.uk/Duc_Dev/Duc_Profiler/';
+	public $baseURL = '';
 
 	/**
 	 * --------------------------------------------------------------------------

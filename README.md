@@ -30,7 +30,7 @@ Clone this repo into www directory of your server by running following command.
 1. ``` git clone https://github.com/Cafe-Variome/DucCCE.git ```
 2. ``` cd DucCCE ```
 3. ``` php composer install ```
-4. tailor .env file for your application specifically the baseURL and any database settings.
+4. Copy env to .env and tailor for your app, specifically the baseURL and any database settings.
 
 This application allow you to create, download and upload profiles if you wish to save profiles in database then create database import DucCCE.sql to your database and configure your database either in .env file or app/config/Database.php file. 
 
