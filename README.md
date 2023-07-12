@@ -1,54 +1,16 @@
-# CodeIgniter 4 Application Starter
+##  DUC Profile Creator Using CCE 
+The DUC profile creator is an easy to use tool to create a profile of use condition statements for a given resource. The process is based upon a series of 'Common Conditions of Use Element' (CCE) concepts, and an online form that gathers this information into a 'Profile'. These profiles can be updated at any time, and you decide what to include or not include in your resource profile. As a user, you can choose to leave a copy on the website or download the profile to your own computer. Whether saved on the site or downloaded, profiles can be reopened/uploaded for further editing later. This tool can be accessed The tool can be accessed at [URL](https://ducejprd.le.ac.uk/).
+## Digital Use Condition (DUC)
+**“Digital Use Conditions” (DUC)** is an operational data structure designed to standardise the way consent and use conditions (relating to any resource) are computationally represented. A DUC structure that has been populated with asset information and consent and use conditions is called a **DUC Profile**.
+DUC has been devised and tested by a TaskForce of the International Rare Disease Research Consortium (IRDiRC).
+## Common Conditions of use Elements (CCE)
+**“Common Conditions of use Elements” (CCE)** comprises core set of “Use Condition Terms”. Each term within the CCE is designed to be atomic and non-directional in nature. As such they can be used as building blocks to construct a Use Conditions “policy” covering the general use conditions for a resource. CCEs are intended to be used in conjunction with DUC structure, allowing a profile to be produced that gives an overview of a resource and its associated use conditions. CCE are being developed and tested for use within Pillar 2 of the European Joint Programme on Rare Disease (EJP-RD). More information about DUC,CCE and FAQs can be found [Here](https://ducejprd.le.ac.uk/Learn/index). You can contact [Spencer Gibson](mailto:spencer.gibson@leicester.ac.uk) for queries about DUC or CCE concept and using the the system to create profiles.
 
-## What is CodeIgniter?
+This tool is developed using **CodeIgniter** which is PHP full-stack web framwork that is light, fast, flexible and secure. More information about CodeIgniter can be found at the [official site](http://codeigniter.com).
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+### Development
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
-
-## Installation & updates
-
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
-
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
+#### Server Requirements
 
 PHP version 7.3 or higher is required, with the following extensions installed:
 
@@ -61,3 +23,20 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+
+#### Setup
+Clone this repo into www directory of your server by running following command.
+
+1. ``` git clone https://github.com/Cafe-Variome/DucCCE.git ```
+2. ``` cd DucCCE ```
+3. ``` php composer install ```
+4. tailor .env file for your application specifically the baseURL and any database settings.
+
+This application allow you to create, download and upload profiles if you wish to save profiles in database then create database import DucCCE.sql to your database and configure your database either in .env file or app/config/Database.php file. 
+
+For any query about this setup please contact [Umar Riaz](mailto:ur13@leicester.ac.uk). 
+
+
+
+
+
